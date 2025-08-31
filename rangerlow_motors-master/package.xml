@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rangerlow_motors</name>
+  <version>0.0.1</version>
+  <description>Driver for Ranger rover</description>
+
+  <maintainer email="gleb.tedpoope@gmail.com">sip</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build system -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Run-time and general dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>rangerros_interfaces</exec_depend>
+  <exec_depend>python3-pyserial</exec_depend>
+
+  <!-- Needed for message generation (if using .msg) -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
